@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formations List</title>
+</head>
+<body>
+    <h1>Formations List</h1>
+    
+    <!-- Example form for enrolling -->
+    <form method="POST">
+        {% csrf_token %}
+        <label for="formation_id">Formation ID to Enroll:</label>
+        <input type="number" id="formation_id" name="formation_id" required>
+        <button type="submit">Enroll</button>
+    </form>
+</body>
+</html>
